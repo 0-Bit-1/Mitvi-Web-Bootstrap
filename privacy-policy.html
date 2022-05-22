@@ -1,0 +1,824 @@
+<!doctype html>
+<html lang="en-US">
+   
+<head>
+      <!-- Required meta tags -->
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Watch Live TV, Latest Movies, TV Series/Shows, Webseries, News & Live TV Online on MiTiVi</title>
+      <!-- Favicon -->
+      <link rel="shortcut icon" href="images/favicon.ico" />
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="css/bootstrap.min.css" />
+      <!-- Typography CSS -->   
+      <link rel="stylesheet" href="css/typography.css">
+      <!-- Style -->
+      <link rel="stylesheet" href="css/style.css" />
+      <!-- Responsive -->
+      <link rel="stylesheet" href="css/responsive.css" />
+   </head>
+   <body>
+      <!-- loader Start -->
+      <div id="loading">
+         <div id="loading-center">
+         </div>
+      </div>
+      <!-- loader END -->
+      <!-- Header -->
+      <header id="main-header">
+         <div class="main-header">
+            <div class="container-fluid">
+               <div class="row">
+                  <div class="col-sm-12">
+                     <nav class="navbar navbar-expand-lg navbar-light p-0">
+                        <a href="#" class="navbar-toggler c-toggler" data-toggle="collapse"
+                           data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                           aria-expanded="false" aria-label="Toggle navigation">
+                           <div class="navbar-toggler-icon" data-toggle="collapse">
+                              <span class="navbar-menu-icon navbar-menu-icon--top"></span>
+                              <span class="navbar-menu-icon navbar-menu-icon--middle"></span>
+                              <span class="navbar-menu-icon navbar-menu-icon--bottom"></span>
+                           </div>
+                        </a>
+                        <a class="navbar-brand" href="index.html"> <img class="img-fluid logo" src="images/logo.png"
+                           alt="MiTiVi" /> </a>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                           <div class="menu-main-menu-container">
+                               <ul id="top-menu" class="navbar-nav ml-auto">
+                                   <li class="menu-item">
+                                       <a href="index.html">Featured</a>
+                                   </li>
+                                   <li class="menu-item">
+                                       <a href="live-tv.html">Live TV</a>
+                                   </li>
+                                   <li class="menu-item">
+                                       <a href="internet-tv.html">Internet TV</a>
+                                   </li>
+                                   <li class="menu-item">
+                                       <a href="movie-category.html">Movies</a>
+                                   </li>
+                                   <li class="menu-item">
+                                       <a href="show-category.html">Web Series</a>
+                                   </li>
+                               </ul>
+                           </div>
+                        </div>
+                        <div class="mobile-more-menu">
+                           <a href="javascript:void(0);" class="more-toggle" id="dropdownMenuButton"
+                              data-toggle="more-toggle" aria-haspopup="true" aria-expanded="false">
+                           <i class="ri-more-line"></i>
+                           </a>
+                           <div class="more-menu" aria-labelledby="dropdownMenuButton">
+                              <div class="navbar-right position-relative">
+                                 <ul class="d-flex align-items-center justify-content-end list-inline m-0">
+                                    <li>
+                                       <a href="#" class="search-toggle">
+                                       <i class="ri-search-line"></i>
+                                       </a>
+                                       <div class="search-box iq-search-bar">
+                                          <form action="#" class="searchbox">
+                                             <div class="form-group position-relative">
+                                                <input type="text" class="text search-input font-size-12"
+                                                   placeholder="type here to search...">
+                                                <i class="search-link ri-search-line"></i>
+                                             </div>
+                                          </form>
+                                       </div>
+                                    </li>
+                                    <li class="nav-item nav-icon">
+                                       <a href="#" class="search-toggle position-relative">
+                                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22"
+                                             height="22" class="noti-svg">
+                                             <path fill="none" d="M0 0h24v24H0z" />
+                                             <path
+                                                d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                          </svg>
+                                          <span class="bg-danger dots"></span>
+                                       </a>
+                                       <div class="iq-sub-dropdown">
+                                          <div class="iq-card shadow-none m-0">
+                                             <div class="iq-card-body">
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                         alt="MiTiVi" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">Boop Bitty</h6>
+                                                         <small class="font-size-12"> just now</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                         alt="MiTiVi" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">The Last Breath</h6>
+                                                         <small class="font-size-12">15 minutes ago</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="#" class="iq-sub-card">
+                                                   <div class="media align-items-center">
+                                                      <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                         alt="MiTiVi" />
+                                                      <div class="media-body">
+                                                         <h6 class="mb-0 ">The Hero Camp</h6>
+                                                         <small class="font-size-12">1 hour ago</small>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                    <li>
+                                       <a href="#" class="iq-user-dropdown search-toggle d-flex align-items-center">
+                                       <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle"
+                                          alt="user">
+                                       </a>
+                                       <div class="iq-sub-dropdown iq-user-dropdown">
+                                          <div class="iq-card shadow-none m-0">
+                                             <div class="iq-card-body p-0 pl-3 pr-3">
+                                                <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-file-user-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">Manage Profile</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-settings-4-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">User Settings</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="pricing-plan.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-settings-4-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0 ">Subscription Plan</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                                <a href="login.html" class="iq-sub-card setting-dropdown">
+                                                   <div class="media align-items-center">
+                                                      <div class="right-icon">
+                                                         <i class="ri-logout-circle-line text-primary"></i>
+                                                      </div>
+                                                      <div class="media-body ml-3">
+                                                         <h6 class="mb-0">Logout</h6>
+                                                      </div>
+                                                   </div>
+                                                </a>
+                                             </div>
+                                          </div>
+                                       </div>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="navbar-right menu-right">
+                           <ul class="d-flex align-items-center list-inline m-0">
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="search-toggle device-search">
+                                 <i class="ri-search-line"></i>
+                                 </a>
+                                 <div class="search-box iq-search-bar d-search">
+                                    <form action="#" class="searchbox">
+                                       <div class="form-group position-relative">
+                                          <input type="text" class="text search-input font-size-12"
+                                             placeholder="type here to search...">
+                                          <i class="search-link ri-search-line"></i>
+                                       </div>
+                                    </form>
+                                 </div>
+                              </li>
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="search-toggle" data-toggle="search-toggle">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22"
+                                       class="noti-svg">
+                                       <path fill="none" d="M0 0h24v24H0z" />
+                                       <path
+                                          d="M18 10a6 6 0 1 0-12 0v8h12v-8zm2 8.667l.4.533a.5.5 0 0 1-.4.8H4a.5.5 0 0 1-.4-.8l.4-.533V10a8 8 0 1 1 16 0v8.667zM9.5 21h5a2.5 2.5 0 1 1-5 0z" />
+                                    </svg>
+                                    <span class="bg-danger dots"></span>
+                                 </a>
+                                 <div class="iq-sub-dropdown">
+                                    <div class="iq-card shadow-none m-0">
+                                       <div class="iq-card-body">
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="images/notify/thumb-1.jpg" class="img-fluid mr-3"
+                                                   alt="MiTiVi" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">Boot Bitty</h6>
+                                                   <small class="font-size-12"> just now</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="images/notify/thumb-2.jpg" class="img-fluid mr-3"
+                                                   alt="MiTiVi" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">The Last Breath</h6>
+                                                   <small class="font-size-12">15 minutes ago</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="#" class="iq-sub-card">
+                                             <div class="media align-items-center">
+                                                <img src="images/notify/thumb-3.jpg" class="img-fluid mr-3"
+                                                   alt="MiTiVi" />
+                                                <div class="media-body">
+                                                   <h6 class="mb-0 ">The Hero Camp</h6>
+                                                   <small class="font-size-12">1 hour ago</small>
+                                                </div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                              <li class="nav-item nav-icon">
+                                 <a href="#" class="iq-user-dropdown search-toggle p-0 d-flex align-items-center"
+                                    data-toggle="search-toggle">
+                                 <img src="images/user/user.jpg" class="img-fluid avatar-40 rounded-circle" alt="user">
+                                 </a>
+                                 <div class="iq-sub-dropdown iq-user-dropdown">
+                                    <div class="iq-card shadow-none m-0">
+                                       <div class="iq-card-body p-0 pl-3 pr-3">
+                                          <a href="manage-profile.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-file-user-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">Manage Profile</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="setting.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-settings-4-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">User Settings</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="pricing-plan.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-settings-4-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">Subscription Plan</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                          <a href="login.html" class="iq-sub-card setting-dropdown">
+                                             <div class="media align-items-center">
+                                                <div class="right-icon">
+                                                   <i class="ri-logout-circle-line text-primary"></i>
+                                                </div>
+                                                <div class="media-body ml-3">
+                                                   <h6 class="mb-0 ">Logout</h6>
+                                                </div>
+                                             </div>
+                                          </a>
+                                       </div>
+                                    </div>
+                                 </div>
+                              </li>
+                           </ul>
+                        </div>
+                     </nav>
+                     <div class="nav-overlay"></div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+
+      <section class="privacy-policy">
+            <div class="container-fluid">
+
+                <!-- Start of row -->
+                <div class="row">
+                    <div class="col-md-12">
+                        
+                  <h4>Privacy Policy</h4>
+<p>Last modified: April 1, 2021 <br /><br />
+   There are many different ways you can use our services – to search for and share information, to communicate with other people or to create new content. When you share information with us, for example by creating a MiTiVi Account, we can make those services even better – to show you more relevant search results and ads, to help you connect with people or to make sharing with others quicker and easier. As you use our services, we want you to be clear how we’re using information and the ways in which you can protect your privacy.
+</p>
+
+<h4>Our Privacy Policy explains:</h4>
+
+<p>We’ve tried to keep it as simple as possible, but if you’re not familiar with terms like cookies, IP addresses,
+ pixel tags and browsers, then read about these key terms first. Your privacy matters to MiTiVi so whether you 
+ are new to MiTiVi or a long- time user, please do take the time to get to know our practices – and if you have 
+ any questions contact us.</p>
+
+<p>We collect information to provide better services to all of our users – from figuring out basic stuff like which language you speak, to more complex things like which ads you’ll find most useful, the people who matter most to you online, or which content you might like.</p>
+
+<li>What information we collect and why we collect it.   </li>
+
+<li>How we use that information. </li>
+
+<li>The choices we offer, including how to access and update information.  </li><br />
+                  
+<h4>We collect information in the following ways:</h4>
+
+<p>Information we collect when you are signed in to MiTiVi, in addition to information we obtain about you from partners, may be associated with your MiTiVi Account. When information is associated with your MiTiVi Account, we treat it as personal information. For more information about how you can access, manage or delete information that is associated with your MiTiVi Account.</p>  
+
+<li>Information you give us. For example, many of our services require you to sign up for a MiTiVi Account. When you do, we’ll ask for personal information, like your name, email address, telephone number or credit card to store with your account. If you want to take full advantage of the sharing features we offer, we might also ask you to create a publicly visible MiTiVi Profile, which may include your name and photo. </li>
+
+<li>Information we get from your use of our services. We collect information about the services that you use and how you use them, like when you watch a video on MiTiVi, visit a website that uses our advertising services, or view and interact with our ads and content. This information includes:  </li>
+
+<li>Device information : We collect device-specific information (such as your hardware model, operating system version, unique device identifiers, and mobile network information including phone number). MiTiVi may associate your device identifiers or phone number with your MiTiVi Account.</li>
+
+<li>Log information: When you use our services or view content provided by MiTiVi,
+ we automatically collect and store certain information in server logs.<br />This includes:
+
+ <ul style="padding:20px 0 10px 40px; list-style-type: circle;">
+
+ <li>details of how you used our service, such as your search queries.</li>
+ <li>telephony log information like your phone number, calling-party number, forwarding numbers, time and date of calls, duration of calls, SMS routing information and types of calls.</li>
+ <li>Internet protocol address.</li>
+ <li>device event information such as crashes, system activity, hardware settings, browser type, browser 
+language, the date and time of your request and referral URL.</li>
+ <li>cookies that may uniquely identify your browser or your MiTiVi Account</li>
+
+ </ul>
+ 
+ </li>
+
+
+
+<li> Location information:
+When you use MiTiVi services, we may collect and process information about your actual location. We use various technologies to determine location, including IP address, GPS, and other sensors that may, for example, provide MiTiVi with information on nearby devices, Wi-Fi access points and cell towers.
+  </li>
+
+<li>Unique application numbers:
+Certain services include a unique application number. This number and information about your installation (for example, the operating system type and application version number) may be sent to MiTiVi when you install or uninstall that service or when that service periodically contacts our servers, such as for automatic updates.
+</li>
+
+<li>Local storage:
+We may collect and store information (including personal information) locally on your device using mechanisms such as browser web storage (including HTML 5) and application data caches.
+</li>
+
+
+<li>Cookies and similar technologies:
+We and our partners use various technologies to collect and store information when you visit a MiTiVi service, and this may include using cookies or similar technologies to identify your browser or device. We also use these technologies to collect and store information when you interact with services we offer to our partners, such as advertising services or MiTiVi features that may appear on other sites. Our MiTiVi Analytics product helps businesses and site owners analyze the traffic to their websites and apps. When used in conjunction with our advertising services, such as those using the DoubleClick cookie, MiTiVi Analytics information is linked, by the MiTiVi Analytics customer or by MiTiVi, using MiTiVi technology, with information about visits to multiple sites.
+</li>
+
+
+<br>
+             
+                  
+<br>  
+<h4>How we use information we collect</h4>
+<p>We use the information we collect from all of our services to provide, maintain, protect and improve them, to develop new ones, and to protect MiTiVi and our users. We also use this information to offer you tailored content – like giving you more relevant search results and ads.</p>              
+<p>We may use the name you provide for your MiTiVi Profile across all of the services we offer that require a MiTiVi Account. In addition, we may replace past names associated with your MiTiVi Account so that you are represented consistently across all our services. If other users already have your email, or other information that identifies you, we may show them your publicly visible MiTiVi Profile information, such as your name and photo.</p>  
+<p>If you have a MiTiVi Account, we may display your Profile name, Profile photo, and actions you take on MiTiVi or on third- party applications connected to your MiTiVi Account (such as +1’s, reviews you write and comments you post) in our services, including displaying in ads and other commercial contexts. We will respect the choices you make to limit sharing or visibility settings in your MiTiVi Account.</p>
+<p>When you contact MiTiVi, we keep a record of your communication to help solve any issues you might be facing. We may use your email address to inform you about our services, such as letting you know about upcoming changes or improvements.</p>
+<p>We use information collected from cookies and other technologies, like pixel tags, to improve your user experience and the overall quality of our services. One of the products we use to do this on our own services is MiTiVi Analytics. For example, by saving your language preferences, we’ll be able to have our services appear in the language you prefer. When showing you tailored ads, we will not associate an identifier from cookies or similar technologies with sensitive categories, such as those based on race, religion, sexual orientation or health.</p>
+<p>Our automated systems analyze your content (including emails) to provide you personally relevant product features, such as
+customized search results, tailored advertising, and spam and malware detection.
+</p>
+<p>We may combine personal information from one service with information, including personal information, from other MiTiVi services – for example to make it easier to share things with people you know. Depending on your account settings, your activity on other sites and apps may be associated with your personal information in order to improve MiTiVi’s services and the ads delivered by MiTiVi.</p>
+<p>We will ask for your consent before using information for a purpose other than those that are set out in this Privacy Policy.</p>
+<p>MiTiVi processes personal information on our servers in many countries around the world. We may process your personal information on a server located outside the country where you live.</p>
+<br>
+
+
+<h4>Transparency and choice</h4>
+
+<p>People have different privacy concerns. Our goal is to be clear about what information we collect, so that you can make meaningful choices about how it is used. For example, you can:</p>
+<br>
+
+<li>Review and update your MiTiVi activity controls to decide what types of data, such as videos you’ve watched on MiTiVi or past searches, you would like saved with your account when you use MiTiVi services. You can also visit these controls to manage whether certain activity is stored in a cookie or similar technology on your device when you use our services while signed-out of your account.</li>
+<li>Review and control certain types of information tied to your MiTiVi Account by using MiTiVi Dashboard.</li>
+<li>View and edit your preferences about the MiTiVi ads shown to you on MiTiVi and across the web, such as which categories might interest you, using Ads Settings. You can also visit that page to opt out of certain MiTiVi advertising services.</li>
+<li>Adjust how the Profile associated with your MiTiVi Account appears to others. </li>
+<li>Control who you share information with through your MiTiVi Account.</li>
+<li>Take information associated with your MiTiVi Account out of many of our services.</li>
+<li>Choose whether your Profile name and Profile photo appear in shared endorsements that appear in ads.</li>
+<br>
+
+<p>You may also set your browser to block all cookies, including cookies associated with our services, or to indicate when a cookie is being set by us. However, it’s important to remember that many of our services may not function properly if your cookies are disabled. For example, we may not remember your language preferences.</p>
+<br>
+<p><b>Information you share</b> : 
+
+Many of our services let you share information with others. Remember that when you share information publicly, it may be indexable by search engines, including MiTiVi. Our services provide you with different options on sharing and removing your content.
+</p>
+
+<h4>Accessing and updating your personal information</h4>
+<p>Whenever you use our services, we aim to provide you with access to your personal information. 
+If that information is wrong, we strive to give you ways to update it quickly or to delete it – 
+unless we have to keep that information for legitimate business or legal purposes.
+<br>
+We aim to maintain our services in a manner that protects information from accidental or malicious destruction. Because of this, after you delete information from our services, we may not immediately delete residual copies from our active servers and may not remove information from our backup systems.
+
+</p>
+
+
+<br>
+<h4>Information we share</h4>
+<p>We do not share personal information with companies, organizations and individuals outside of MiTiVi unless one of the following circumstances applies:</p>
+<br>
+<li><b>With your consent</b><br>
+
+We will share personal information with companies, organizations or individuals outside of MiTiVi when we have your consent to do so. We require opt-in consent for the sharing of any sensitive personal information.
+</li>
+<li><b>For external processing</b>
+<br>
+We provide personal information to our affiliates or other trusted businesses or persons to process it for us, based on our instructions and in compliance with our Privacy Policy and any other appropriate confidentiality and security measures.
+</li>
+<li><b>For legal reasons</b>
+<br>
+We will share personal information with companies, organizations or individuals outside of MiTiVi if we have a good- faith belief that access, use, preservation or disclosure of the information is reasonably necessary to:
+<ul style="padding:20px 0 0 40px; list-style-type: circle;">
+<li>meet any applicable law, regulation, legal process or enforceable governmental request. </li>
+<li>enforce applicable Terms of Service, including investigation of potential violations.</li>
+<li>detect, prevent, or otherwise address fraud, security or technical issues.</li>
+<li>protect against harm to the rights, property or safety of MiTiVi, our users or the public as required or permitted by law.</li>
+
+</ul>
+</li>
+
+<br>
+
+
+
+
+<p>We may share non-personally identifiable information publicly and with our partners –
+ like publishers, advertisers or connected sites. For example, we may share information publicly
+ to show trends about the general use of our services.
+ <br>
+ If MiTiVi is involved in a merger, acquisition or asset sale, we will continue to ensure the confidentiality of any personal information and give affected users notice before personal information is transferred or becomes subject to a different privacy policy.
+ </p>
+<br>
+<h4>Information security</h4>
+<p>We work hard to protect MiTiVi and our users from unauthorized access to or 
+unauthorized alteration, disclosure or destruction of information we hold. In particular:</p>
+<li>We encrypt many of our services using SSL</li>
+<li>We offer you two step verification when you access your MiTiVi Account, and a Safe Browsing feature in MiTiVi Chrome.</li>
+<li>We review our information collection, storage and processing practices, including physical security measures, to guard against unauthorized access to systems.</li>
+<li>We restrict access to personal information to MiTiVi employees, contractors and agents who need to know that information in order to process it for us, and who are subject to strict contractual confidentiality obligations and may be disciplined or terminated if they fail to meet these obligations.</li>
+
+
+<br>
+
+
+
+<h4>When this Privacy Policy applies</h4>
+<p>
+Our Privacy Policy applies to all of the services offered by MiTiVi and its affiliates, MiTiVi provides on Android/IOS devices, and services offered on other sites (such as our advertising services), but excludes services that have separate privacy policies that do not incorporate this Privacy Policy.
+<br>
+Our Privacy Policy does not apply to services offered by other companies or individuals, including products or sites that may be displayed to you in search results, sites that may include MiTiVi services, or other sites linked from our services. Our Privacy Policy does not cover the information practices of other companies and organizations who advertise our services, and who may use cookies, pixel tags and other technologies to serve and offer relevant ads.
+</p>
+<br>
+
+<h4>Compliance and cooperation with regulatory authorities</h4>
+<p>
+We regularly review our compliance with our Privacy Policy. We also adhere to several self regulatory frameworks, including the EU-US and Swiss-US Privacy Shield Frameworks. When we receive formal written complaints, we will contact the person who made the complaint to follow up. We work with the appropriate regulatory authorities, including local data protection authorities, to resolve any complaints regarding the transfer of personal data that we cannot resolve with our users directly.
+
+</p>
+<br>
+
+
+<h4>Changes</h4>
+<p>
+Our Privacy Policy may change from time to time. We will not reduce your rights under this Privacy Policy without your explicit consent. We will post any privacy policy changes on this page and, if the changes are significant, we will provide a more prominent notice (including, for certain services, email notification of privacy policy changes). We will also keep prior versions of this Privacy Policy in an archive for your review.
+
+</p>
+<br>
+
+
+
+<b>"access to your personal information" </b> : <p>
+For example, with MiTiVi Dashboard you can quickly and easily see some of the data associated with your MiTiVi Account.  
+
+</p>
+<br>
+
+<b>"ads you’ll find most useful" </b> : <p>
+ For example, if you frequently visit websites and blogs about gardening, you may see ads related to gardening as you browse the web. 
+
+</p>
+<br>
+
+<b>"advertising services" </b> : <p>
+ For example, if you frequently visit websites and blogs about gardening that show our ads, you may start to see ads related to this interest as you browse the web.
+ 
+ 
+
+</p>
+
+<br>
+
+<b> "and other sensors"</b> : <p>
+  
+Your device may have sensors that provide information to assist in a better understanding of your location. For example, an accelerometer can be used to determine things like speed, or a gyroscope to figure out direction of travel. 
+</p>
+<br>
+
+
+<b> "collect information"</b> : <p>
+  This includes information like your usage data and preferences, messages, profile, photos, videos, browsing history, map searches, docs, or other MiTiVi-hosted content. 
+
+</p>
+<br>
+
+<b>"combine personal information from one service with information, including personal information, from other MiTiVi services" </b> : 
+ <br><p> 
+For example, when you’re signed in to your MiTiVi Account and search on MiTiVi, you can see search results from the public web, along with pages, photos, and MiTiVi+ posts from your friends and people who know you or follow you on MiTiVi+ may see your posts and profile in their results. 
+</p>
+<br>
+
+<b>"connect with people" </b> : <p>
+  
+For example, you could get suggestions of people you might know or want to connect with on MiTiVi+, based on the connections you have with people on other MiTiVi products, and people who have a connection with you may see your profile as a suggestion. 
+</p>
+<br>
+
+<b> "credit card"</b> : <p>
+  Whilst we currently don’t ask for a credit card during sign up, verifying your age through a small credit card transaction is one way to confirm that you meet our age requirements in case your account was disabled after you have entered a birthday indicating you are not old enough to have a MiTiVi Account. 
+
+</p>
+<br>
+
+<b>"develop new ones" </b> :<p> 
+ For example, MiTiVi’s spell checking software was developed by analyzing previous searches where users had corrected their own spelling.  
+
+</p>
+<br>
+
+<b>"device identifiers" </b> : <p>
+ Device identifiers let MiTiVi know which unique device you are using to access our services, which can be used to customise our service to your device or analyse any device issues related to our services. 
+
+ 
+
+</p>
+<br>
+
+<b>"device-specific information" </b> :<p> 
+  
+For example, when you visit MiTiVi Play from your desktop, MiTiVi can use this information to help you decide on which devices you'd like your purchases to be available for use. 
+</p>
+<br>
+
+<b> "improve your user experience"</b> : <p>
+  
+For example, cookies allow us to analyse how users interact with our services. 
+</p>
+<br>
+
+<b>"legal process or enforceable governmental request" </b> : <p>
+  
+Like other technology and communications companies, MiTiVi regularly receives requests from governments and courts
+around the world to hand over user data. Our legal team reviews each and every request, regardless of type, and we frequently push back when the requests appear to be overly broad or don’t follow the correct process.
+
+</p>
+<br>
+
+<b>"limit sharing or visibility settings" </b> :<p> 
+  
+For example, you can choose your settings so your name and photo do not appear in an ad. 
+</p>
+<br>
+
+<b>"linked with information about visits to multiple sites" </b> : <p>
+  
+MiTiVi Analytics is based on first-party cookies. Data generated through MiTiVi Analytics can be linked, by the MiTiVi Analytics customer or by MiTiVi, using MiTiVi technology, to third-party cookies, related to visits to other websites, for instance when an advertiser wants to use its MiTiVi Analytics data to create more relevant ads, or to further analyze its traffic. 
+</p>
+<br>
+
+<b>"maintain" </b> : <p>
+  
+For example, we continuously monitor our systems to check that they are working as intended and in order to detect and fix errors. 
+</p>
+<br>
+
+<b>"may not function properly" </b> : <p>
+ For example, we use a cookie called ‘lbcs’ which makes it possible for you to open many MiTiVi Docs in one browser.  
+
+</p>
+<br>
+
+<b>"and our partners" </b> : <p>
+  We allow trusted businesses to use cookies or similar technologies for advertising and research purposes on our services. 
+
+</p>
+<br>
+
+<b> "phone number"</b> : <p>
+  
+For example, if you add a phone number as a recovery option, if you forget your password MiTiVi can send you a text message with a code to enable you to reset it. 
+</p>
+<br>
+
+<b>"protect MiTiVi and our users" </b> : <p>
+ For example, if you're concerned about unauthorized access to your email, "Last account activity" shows you information about recent activity in your email, such as the IP addresses that accessed your mail, the associated location, as well as the time and date.  
+
+</p>
+<br>
+
+<b>"protect" </b> : <p>
+  For example, one reason we collect and analyze IP addresses and cookies is to protect our services against automated abuse. 
+
+</p>
+<br>
+
+<b>"provide" </b> : <p>
+ For example, the IP address assigned to your device is used to send the data you requested back to your device. 
+ 
+ 
+
+</p>
+<br>
+
+<b>"sharing" </b> : <p>
+  
+For example, with MiTiVi+, you have many different sharing options
+</p>
+<br>
+
+<b>"sharing with others quicker and easier" </b> : <p>
+  For example, if someone is already a contact, MiTiVi will autocomplete their name if you want to add them to a message on your OS. 
+
+</p>
+<br>
+
+<b>"the people who matter most to you online" </b> : <p>
+  
+For example, when you type an address in the To, Cc, or Bcc field of a message you're composing, OS will suggest addresses from your Contacts list. 
+</p>
+<br>
+
+<b>"to make it easier to share things with people you know" </b> : <p>
+  For example, if you have communicated with someone via E-mail and want to add them to a MiTiVi Doc or an event in MiTiVi Calendar, MiTiVi makes it easy to do so by autocompleting their email address when you start to type in their name. 
+
+
+
+</p>
+<br>
+
+<b>"view and interact with our ads" </b> : <p>
+For example, we regularly report to advertisers on whether we served their ad to a page and whether that ad was likely to be seen by users (as opposed to, for example, being on part of the page to which users did not scroll).   
+
+</p>
+<br>
+
+<b> "We may share aggregated, non-personally identifiable information publicly"</b> : <p>
+ When lots of people start searching for something, it can provide very useful information about particular trends at that time.  
+
+</p>
+<br>
+
+<b>"Wi-Fi access points and cell towers" </b> : <p>
+  For example, MiTiVi can approximate your device’s location based on the known location of nearby cell towers. 
+
+</p>
+<br>
+
+<b>"more relevant search results" </b> : <p>
+  
+For example, we can make search more relevant and interesting for you by including photos, posts, and more from you and your friends. 
+</p>
+<br>
+
+<b>"removing your content" </b> :<p> 
+  
+
+For example, you can delete your Web &amp; App Activity, your blog, a MiTiVi Site you own, your MiTiVi Channel, your MiTiVi+ profile or your entire MiTiVi account. 
+
+</p>
+<br>
+
+<b>"to show trends" </b> : <p>
+  You can see some of these at MiTiVi Trends and MiTiVi Trending Videos. 
+
+</p>
+<br>
+
+<b>"your activity on other sites and apps" </b> : <p>
+ This activity might come from your use of MiTiVi products like Chrome Sync or from your visits to sites and apps that partner with MiTiVi. Many websites and apps partner with MiTiVi to improve their content and services. For example, a website might
+ 
+use our advertising services (like AdSense) or analytics tools (like MiTiVi Analytics). These products share information about your activity with MiTiVi and, depending on your account settings and the products in use (for instance, when a partner uses MiTiVi Analytics in conjunction with our advertising services), this data may be associated with your personal information. 
+ 
+
+</p>
+<br>
+
+
+            
+
+                   <!-- <div class="col-md-4 col-sm-12 align-self-center text-right">
+                        <a href="#" class="btn btn-icon btn-main btn-effect">
+                            view all
+                            <i class="ti-angle-double-right"></i>
+                        </a>
+                    </div>-->
+                </div>
+                <!-- End of row -->
+
+</div>
+</div>
+</section>
+
+      
+
+
+
+ <footer class="mb-0">
+         <div class="container-fluid">
+            <div class="block-space">
+               <div class="row">
+                  <div class="col-lg-4 col-md-4">
+                        <h4>About Us</h4>
+                        <p style="padding: 20px 35px 0 0;text-align: justify;">MiTiVi is a state of Art OTT / IPTV platform incorporating latest cutting edge technology to deliver high quality content to its customers with diverse content offerings in different languages.</p>
+                          
+                      </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-4" >
+                      <ul class="f-link list-unstyled mb-0">
+                        <h4>Information</h4><br />
+                        <ul class="f-link list-unstyled mb-0">
+                          <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                          <li><a href="#">Terms & Conditions</a></li>
+                          <li><a href="#">FAQ</a></li>
+                          <li><a href="#">Contact Us</a></li>
+                          <li><a href="pricing-plan.html">Subscription Plans</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-3 col-md-4">
+                      <h4>Manage</h4><br />
+                      <ul class="f-link list-unstyled mb-0">
+                          <li><a href="manage-profile.html">Profile</a></li>
+                          <li><a href="login.html">Log In</a></li>
+                          <li><a href="sign-up.html">Sign Up</a></li>
+                          <li><a href="setting.html">User Settings</a></li>
+                      </ul>
+                  </div>
+                  <div class="col-lg-2 col-md-12 r-mt-15">
+                      <h4>Download Now</h4><br />
+                     <div class="d-flex">
+                         <a href="#" class="s-icon">
+                             <i class="ri-android-fill"></i>
+                         </a>
+                         <a href="#" class="s-icon">
+                             <i class="ri-apple-fill"></i>
+                         </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="copyright py-2">
+            <div class="container-fluid">
+               <p class="mb-0 text-center font-size-14 text-body">MiTiVi - 2020 | All Rights Reserved.</p>
+            </div>
+         </div>
+      </footer>
+      <!-- MainContent End-->
+      <!-- back-to-top -->
+      <div id="back-to-top">
+         <a class="top" href="#top" id="top"> <i class="fa fa-angle-up"></i> </a>
+      </div>
+      <!-- back-to-top End -->
+      <!-- jQuery, Popper JS -->
+      <script src="js/jquery-3.4.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <!-- Bootstrap JS -->
+      <script src="js/bootstrap.min.js"></script>
+      <!-- Slick JS -->
+      <script src="js/slick.min.js"></script>
+      <!-- owl carousel Js -->
+      <script src="js/owl.carousel.min.js"></script>
+      <!-- select2 Js -->
+      <script src="js/select2.min.js"></script>
+      <!-- Magnific Popup-->
+      <script src="js/jquery.magnific-popup.min.js"></script>
+      <!-- Slick Animation-->
+      <script src="js/slick-animation.min.js"></script>
+      <!-- Custom JS-->
+      <script src="js/custom.js"></script>
+   </body>
+
+</html>
